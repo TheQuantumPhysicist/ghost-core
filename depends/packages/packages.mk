@@ -1,29 +1,16 @@
-packages:=boost libevent
+packages:=boost openssl libevent zeromq gmp backtrace cmake
 
-protobuf_native_packages = native_protobuf
-protobuf_packages = protobuf
+qt_native_packages = native_protobuf
+qt_packages = qrencode protobuf zlib
 
-qt_packages = zlib
-
-qrencode_packages = qrencode
-
-qt_linux_packages:=qt expat libxcb xcb_proto libXau xproto freetype fontconfig
-qt_android_packages=qt
+qt_linux_packages:=qt expat dbus libxcb xcb_proto libXau xproto freetype fontconfig
 
 qt_darwin_packages=qt
 qt_mingw32_packages=qt
 
-bdb_packages=bdb
-sqlite_packages=sqlite
-
-zmq_packages=zeromq
+wallet_packages=bdb
 
 upnp_packages=miniupnpc
-usb_packages=libusb hidapi protobuf
-usb_native_packages=native_protobuf
-
-multiprocess_packages = libmultiprocess capnp
-multiprocess_native_packages = native_libmultiprocess native_capnp
 
 darwin_native_packages = native_biplist native_ds_store native_mac_alias
 
